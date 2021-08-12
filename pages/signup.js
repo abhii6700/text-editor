@@ -2,8 +2,10 @@ import React, {useState} from 'react'
 import axios from '../axios'
 import Link from 'next/link'
 import Button from "@material-tailwind/react/Button";
+import { useRouter } from "next/router";
 
 function Signup() {
+  const router = useRouter()
     const [signupDetails, setSignupDetails] = useState({
         name: '',
         email: '',
@@ -27,6 +29,7 @@ function Signup() {
         }catch(err){
           console.log(err)
         }
+        router.push('/')
 
       }
 

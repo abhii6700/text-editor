@@ -39,7 +39,7 @@ function Login(props) {
   return (
     <div className="flex justify-center mt-44 rounded">
       <div className="bg-[#f8f9fa] p-6 flex flex-col gap-8 items-center">
-        <h1>Login</h1>
+        <h1>Login to continue</h1>
         <input
           className=" px-5 py-2 rounded text-base outline-none"
           type="email"
