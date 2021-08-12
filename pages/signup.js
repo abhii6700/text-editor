@@ -25,11 +25,11 @@ function Signup() {
           const response = await axios.post('/user/register',
             signupDetails
           )
-          console.log(response)
+          router.push('/')
         }catch(err){
           console.log(err)
         }
-        router.push('/')
+        
 
       }
 
