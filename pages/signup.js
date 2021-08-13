@@ -72,7 +72,6 @@ function Signup() {
           onChange={handleChange}
         />
         <select
-                            value={signupDetails.role}
                             name='role'
                             onChange={handleChange}
                             className=" px-5 py-2 rounded text-base outline-none" >
