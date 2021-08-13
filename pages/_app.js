@@ -1,6 +1,8 @@
 import 'tailwindcss/tailwind.css'
 import "@material-tailwind/react/tailwind.css";
 import Head from 'next/head'
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function MyApp({ Component, pageProps }) {
   return (<>
@@ -11,6 +13,7 @@ function MyApp({ Component, pageProps }) {
   />
   </Head>
   <Component {...pageProps} />
+  <ToastContainer/>
   </>
   )
 }

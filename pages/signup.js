@@ -3,6 +3,8 @@ import axios from '../axios'
 import Link from 'next/link'
 import Button from "@material-tailwind/react/Button";
 import { useRouter } from "next/router";
+import { toast } from 'react-toastify';
+
 
 function Signup() {
   const router = useRouter()
@@ -26,6 +28,16 @@ function Signup() {
             signupDetails
           )
           router.push('/')
+          toast.info('Login again to continue', {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+
         }catch(err){
           console.log(err)
         }
