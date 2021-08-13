@@ -37,6 +37,7 @@ function Signup() {
             draggable: true,
             progress: undefined,
             });
+            console.log(response)
 
         }catch(err){
           console.log(err)
@@ -61,14 +62,14 @@ function Signup() {
           className=" px-5 py-2 rounded text-base outline-none"
           type="email"
           name="email"
-          placeholder="Enter Email address"
+          placeholder="Email address"
           onChange = {handleChange}
         />
         <input
           className=" px-5 py-2 rounded text-base outline-none"
           type="password"
           name="password"
-          placeholder="Enter Password"
+          placeholder="Password (min 6 digit)"
           onChange={handleChange}
         />
         <select
