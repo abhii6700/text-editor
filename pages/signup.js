@@ -12,7 +12,7 @@ function Signup() {
         name: '',
         email: '',
         password: '',
-        role: '',
+        role: 'standard',
     })
 
     const handleChange = (e) => {
